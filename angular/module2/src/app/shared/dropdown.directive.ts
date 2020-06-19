@@ -6,5 +6,6 @@ export class DropdownDirective{
     @HostListener('click') toggleOpen(){
         console.log("1");
         this.isOpen = !this.isOpen;
+        console.log(this.isOpen);
     }
 }

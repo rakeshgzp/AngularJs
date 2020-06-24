@@ -1,5 +1,5 @@
+import { AuthGuard } from './../auth/auth-guard.service';
 import { SharedModule } from './../shared/shared.module';
-import { DropdownDirective } from './../shared/dropdown.directive';
 import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 import { RecipesComponent } from './recipes.component';
 import { NgModule } from '@angular/core';
@@ -20,7 +20,7 @@ import { RecipesRoutingModule } from './recipes-routing.module';
         RecipeEditComponent,
         RecipeItemComponent,
     ],
-    providers: [],
+    // providers: [AuthGuard],
     imports:[
         CommonModule,
         ReactiveFormsModule,

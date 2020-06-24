@@ -8,16 +8,16 @@ export class shoppingListService{
         new Ingredient('Apples', 5),
         new Ingredient('Tomato', 10),
       ];
-    getIngredients(){
-        return this.ingredients.slice();
-    }
+    // getIngredients(){
+    //     return this.ingredients.slice();
+    // }
     getIngredient(index: number){
         return this.ingredients[index];
     }
-    addIngredient(ingredient: Ingredient){
-        this.ingredients.push(ingredient);
-        this.ingredientsChanged.next(this.ingredients.slice());
-    }
+    // addIngredient(ingredient: Ingredient){
+    //     this.ingredients.push(ingredient);
+    //     this.ingredientsChanged.next(this.ingredients.slice());
+    // }
     addIngredients(ingredients: Ingredient[]){
     //     for (let ingredient of ingredients){
     //         this.addIngredient(ingredient);

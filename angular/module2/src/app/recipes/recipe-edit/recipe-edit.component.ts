@@ -71,7 +71,7 @@ private initForm(){
   });
 }
 onAddIngredient(){
-  (<FormArray>this.recipeForm.get('ingredients')).push(
+  (<FormArray>this.recipeForm.get('ingredients')).controls.push(
     new FormGroup({
       'name': new FormControl(null, Validators.required),
       'amount': new FormControl(null, [Validators.required,
